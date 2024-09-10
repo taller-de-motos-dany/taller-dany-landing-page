@@ -58,15 +58,15 @@ const Menu1 = () => {
       });
     };
   }, []);
- 
+
   return (
     <>
-      <header className="encabezado-personalizado">
+      <header className="encabezado-personalizado" role="banner">
         <div className="logo">
-          <img src="https://firebasestorage.googleapis.com/v0/b/taller-dany.appspot.com/o/logos-taller-de-motos-dany%2Flogo2.png?alt=media&token=968b767b-040e-4e7b-a37b-818f96e35320" alt="Logo" />
-          <span className="texto-logo">TALLER DE MOTO DANY</span>
+          <img src="https://firebasestorage.googleapis.com/v0/b/taller-dany.appspot.com/o/logos-taller-de-motos-dany%2Flogo2.png?alt=media&token=968b767b-040e-4e7b-a37b-818f96e35320" alt="Logo Taller de Motos Dany" />
+          <span className="texto-logo">TALLER DE MOTOS DANY</span>
         </div>
-        <nav className="seccion-menu">
+        <nav className="seccion-menu" role="navigation" aria-label="Menú principal">
           <ul className="menu-escritorio">
             <li><a href="#inicio" className={seccionActiva === 'inicio' ? 'activo' : ''} onClick={cerrarCajon}>Inicio</a></li>
             <li><a href="#quienes-somos" className={seccionActiva === 'quienes-somos' ? 'activo' : ''} onClick={cerrarCajon}>Quiénes Somos</a></li>
@@ -74,23 +74,27 @@ const Menu1 = () => {
             <li><a href="#trabajos" className={seccionActiva === 'trabajos' ? 'activo' : ''} onClick={cerrarCajon}>Referencias</a></li>
             <li><a href="#contacto" className={seccionActiva === 'contacto' ? 'activo' : ''} onClick={cerrarCajon}>Contacto</a></li>
           </ul>
-          <button className="boton-menu" onClick={mostrarCajon}>
+          <button className="boton-menu" onClick={mostrarCajon} aria-label="Abrir menú">
             <MenuOutlined />
           </button>
         </nav>
         {visible && (
-          <div className="cajon">
+          <div className="cajon" role="dialog" aria-modal="true">
             <div className="cabecera-cajon">
-              <button className="boton-cerrar" onClick={cerrarCajon}>
+              <button className="boton-cerrar" onClick={cerrarCajon} aria-label="Cerrar menú">
                 ×
               </button>
             </div>
             <ul className="menu-cajon">
               <li><a href="#inicio" className={seccionActiva === 'inicio' ? 'activo' : ''} onClick={cerrarCajon}>Inicio</a></li>
-              <hr /><li><a href="#quienes-somos" className={seccionActiva === 'quienes-somos' ? 'activo' : ''} onClick={cerrarCajon}>Quiénes Somos</a></li>
-              <hr /><li><a href="#servicios" className={seccionActiva === 'servicios' ? 'activo' : ''} onClick={cerrarCajon}>Servicios</a></li>
-              <hr /><li><a href="#trabajos" className={seccionActiva === 'trabajos' ? 'activo' : ''} onClick={cerrarCajon}>Referencias</a></li>
-              <hr /><li><a href="#contacto" className={seccionActiva === 'contacto' ? 'activo' : ''} onClick={cerrarCajon}>Contacto</a></li> 
+              <hr />
+              <li><a href="#quienes-somos" className={seccionActiva === 'quienes-somos' ? 'activo' : ''} onClick={cerrarCajon}>Quiénes Somos</a></li>
+              <hr />
+              <li><a href="#servicios" className={seccionActiva === 'servicios' ? 'activo' : ''} onClick={cerrarCajon}>Servicios</a></li>
+              <hr />
+              <li><a href="#trabajos" className={seccionActiva === 'trabajos' ? 'activo' : ''} onClick={cerrarCajon}>Referencias</a></li>
+              <hr />
+              <li><a href="#contacto" className={seccionActiva === 'contacto' ? 'activo' : ''} onClick={cerrarCajon}>Contacto</a></li>
             </ul>
           </div>
         )}
@@ -100,4 +104,3 @@ const Menu1 = () => {
 };
 
 export default Menu1;
-
