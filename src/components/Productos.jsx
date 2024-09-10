@@ -18,7 +18,7 @@ const proyectosData = [
     id: 3,
     title: "Pintura y Estética",
     description: "Centrado en la personalización estética de motocicletas, con servicios de pintura y diseño que transforman cada vehículo en una obra de arte única.",
-    image: "/proyecto3.png"
+    image: "https://firebasestorage.googleapis.com/v0/b/taller-dany.appspot.com/o/img-trabajos%2Festetica1.jpeg?alt=media&token=f779adc6-6197-4b8f-b402-bdbc49680e7f"
   },
   {
     id: 4,
