@@ -106,7 +106,7 @@ const CarouselComponent = ({ onImageLoad }) => {
       {isMobile && (
         <div className="mobile-banner">
           <Carousel className="custom-carousel">
-            <div>
+            <div id="inicio">
               <img
                 src="https://firebasestorage.googleapis.com/v0/b/taller-dany.appspot.com/o/banners%2FbannerMobil.png?alt=media&token=08809d2f-53a2-4037-ab29-49e2f07b96d0"
                 className="carousel-content"
