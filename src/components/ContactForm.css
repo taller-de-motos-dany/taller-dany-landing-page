@@ -1,0 +1,120 @@
+/* Estilos generales */
+.seccion-personalizada {
+  padding: 20px;
+}
+
+.contenedor-formulario-contacto {
+  color: #ffffff;
+}
+
+/* Sección de título */
+.contenedor-titulo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-flechas {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flecha-izquierda, .flecha-derecha {
+  position: absolute;
+  color: #ff6666;
+  font-size: 1.5rem; /* Usar rem en lugar de px */
+  transform: translateY(-50%);
+  margin: 0 10px;
+}
+
+.flecha-izquierda {
+  left: 0;
+}
+
+.flecha-derecha {
+  right: 0;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.titulo-contacto {
+  font-size: 2.5rem; /* Usar rem en lugar de px */
+  font-weight: 700;
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 10px 40px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.titulo-destacado {
+  color: #ff3333;
+}
+
+/* Sección de información de contacto */
+.contact-icon {
+  font-size: 1.5rem; /* Usar rem en lugar de px */
+  color: #ff4655;
+  margin-right: 10px;
+}
+
+.contact-label {
+  font-family: 'Teko', sans-serif !important;
+  font-size: 1.25rem !important; /* Usar rem en lugar de px */
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff !important;
+}
+
+.contact-text {
+  font-family: 'Roboto', sans-serif !important;
+  font-size: 1rem !important; /* Usar rem en lugar de px */
+  line-height: 1.6;
+  color: #F4F4F4 !important;
+}
+
+/* Sección de redes sociales */
+.etiqueta-redes-sociales {
+  margin-top: 30px;
+  font-family: 'Teko', sans-serif !important;
+  font-size: 1.25rem !important; /* Usar rem en lugar de px */
+  font-weight: 700 !important;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #ffffff !important;
+}
+
+.social-icon {
+  font-size: 1.75rem; /* Usar rem en lugar de px */
+  color: #ff4655;
+  margin-right: 20px;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+  color: #ffffff;
+}
+
+/* Sección de mapa */
+.contenedor-mapa {
+  height: 450px;
+  padding: 0%;
+  width: 105%; /* Ancho en versión de escritorio */
+  overflow: hidden;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  .contenedor-mapa {
+    padding: 0%;
+    width: 100%; /* Ancho en versión móvil */
+    height: 300px; /* Ajusta la altura para pantallas pequeñas si es necesario */
+  }
+}

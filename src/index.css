@@ -1,0 +1,25 @@
+body{
+  background: #1A1A1A!important;
+}
+.ant-modal-centered {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.hidden {
+  display: none;
+  opacity: 0;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.visible {
+  display: block;
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+}
+@media(max-width:421px){
+  .ant-space-gap-col-small {
+    column-gap: 0!important;
+}
+}

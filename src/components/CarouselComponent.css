@@ -1,0 +1,235 @@
+.marcas-track {
+  margin-top: 13%; /* Aumenta el margen superior para desplazar el carrusel de marcas hacia abajo */
+  display: flex;
+  width: 500%;
+  animation: scroll 40s linear infinite;
+}
+
+
+
+
+/* Resto de estilos */
+.marcas-slide {
+  display: flex;
+  width: 50%;
+  justify-content: space-around;
+  align-items: center;
+}
+
+.marcas-slide img {
+  height: 50px;
+  object-fit: contain;
+  max-width: 18%;
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (max-width: 768px) {
+  .marcas-track {
+    animation: scroll 20s linear infinite;
+  }
+  .marcas-carousel {
+    margin-top: 10px;
+  }
+  .marcas-slide img {
+    height: 30px;
+    max-width: 15%;
+  }
+}
+
+@media (max-width: 480px) {
+  .marcas-slide img {
+    max-width: 20%;
+    height: auto;
+  }
+}
+/* Estilos del banner */
+.carousel-container {
+  position: relative;
+  margin-top: 180px;
+}
+
+.pc-banner, .mobile-banner {
+  display: none;
+}
+
+.carousel-content {
+  width: 100%;
+  height: auto;
+  max-height: calc(100vh - 0px);
+  object-fit: cover;
+}
+
+.carousel-text {
+  position: absolute;
+  top: 55%;
+  left: 2%;
+  transform: translate(0, -50%);
+  color: white;
+  text-align: left;
+  width: 50%;
+  max-width: 600px;
+  padding: 10px;
+}
+
+.carousel-title {
+  font-family: 'Arial', sans-serif;
+  font-size: 4vw;
+  font-weight: 700;
+  color: white;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.carousel-subtitle {
+  font-family: 'Arial', sans-serif;
+  font-size: 11vw;
+  font-weight: 900;
+  color: rgb(233, 19, 19);
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0;
+  line-height: 1;
+}
+
+.carousel-description {
+  font-family: 'Arial', sans-serif;
+  font-size: 1.8vw;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 20px;
+}
+
+.social-media-icons {
+  display: flex;
+  margin-left: 25%;
+  gap: 15px;
+}
+
+.social-media-icons a {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 50%;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.social-media-icons a:hover {
+  background-color: white;
+}
+
+.custom-icon {
+  font-size: 34px;
+  color: white;
+  transition: all 0.3s ease;
+}
+
+.social-media-icons a:hover .custom-icon {
+  color: #e60707;
+}
+
+@media (min-width: 1004px) {
+  .pc-banner {
+    display: block;
+  }
+}
+
+@media (max-width: 1003px) {
+  .mobile-banner {
+    display: block;
+  }
+  .social-media-icons {
+    margin-left: 0%;
+  }
+  .carousel-title {
+    font-size: 6vw;
+  }
+  .carousel-subtitle {
+    font-size: 11vw;
+  }
+  .carousel-description {
+    font-size: 3.5vw;
+  }
+  .social-media-icons a {
+    width: 40px;
+    height: 40px;
+  }
+  .custom-icon {
+    font-size: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-title {
+    font-size: 7vw;
+  }
+  .carousel-subtitle {
+    font-size: 11vw;
+  }
+  .carousel-description {
+    font-size: 4vw;
+  }
+  .social-media-icons a {
+    width: 35px;
+    height: 35px;
+  }
+  .custom-icon {
+    font-size: 18px;
+  }
+}
+@media(max-width: 1200px){
+  .carousel-text {
+    top: 35%;
+  }
+  .carousel-description {
+    font-size: 1.8vw;
+  }
+  .social-media-icons {
+    margin-left: 0;
+    gap: 12px;
+}
+}
+@media (min-width: 1200px) {
+
+  .carousel-title {
+    font-size: 3vw;
+  }
+  .carousel-subtitle {
+    font-size: 8vw;
+  }
+  .carousel-description {
+    font-size: 2vw;
+  }
+  .social-media-icons a {
+    width: 70px;
+    height: 70px;
+  }
+  .custom-icon {
+    font-size: 38px;
+  }
+}
+
+@media(max-width: 420px){
+  .carousel-text {
+    top:58%;
+  }
+  .carousel-description {
+    font-size: 0.8rem;
+  }
+  .social-media-icons {
+    margin-left: 0;
+    gap: 12px;
+}
+}

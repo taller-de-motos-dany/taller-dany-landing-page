@@ -1,0 +1,174 @@
+/* Estilos generales */
+.contenedor {
+  padding-bottom: 5%;
+  background-color: #1a1a1a;
+}
+
+.seccion-personalizada {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Estilos de la columna de imagen */
+.columna-imagen-personalizada {
+  text-align: center;
+}
+
+.imagen-personalizada {
+  width: 70%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.contenedor-miniaturas {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+  margin-bottom: 28px;
+}
+
+.miniatura {
+  width: 60px;
+  height: 40px;
+  object-fit: cover;
+  margin: 0 5px;
+  cursor: pointer;
+  border: 2px solid transparent;
+  border-radius: 5px;
+}
+
+.miniatura.activa {
+  border-color: #ec3b58;
+}
+
+/* Estilos del contenedor de texto */
+.contenedor-texto-personalizado {
+  padding: 20px;
+}
+
+/* Estilos del título principal */
+.contenedor-titulo {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.contenedor-flechas {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flecha-izquierda,
+.flecha-derecha {
+  position: absolute;
+  color: #ff6666;
+  font-size: 24px;
+  transform: translateY(-50%);
+  margin: 0 10px;
+}
+
+.flecha-izquierda {
+  left: 0;
+}
+
+.flecha-derecha {
+  right: 0;
+  transform: translateY(-50%) rotate(180deg);
+}
+
+.titulo-principal {
+  font-size: 48px;
+  font-weight: 700;
+  font-family: 'Teko', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  color: white;
+  text-align: center;
+  margin: 0;
+  padding: 10px 40px;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+}
+
+.texto-destacado {
+  color: #ff3333;
+}
+
+/* Estilos de la descripción */
+.descripcion-personalizada {
+  text-align: left;
+  color: #F4F4F4;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+}
+
+/* Estilos de los botones */
+.contenedor-botones-personalizado {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.boton-personalizado {
+  background: #353636;
+  border: 0px solid #ffffff;
+  color: #ffffff;
+  padding: 10px 20px;
+  margin: 0 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-family: 'Teko', sans-serif;
+  font-size: 24px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.boton-personalizado.activo,
+.boton-personalizado:hover {
+  background-color: #ec3b58;
+  color: white;
+}
+
+/* Estilos de las tarjetas */
+.contenedor-tarjetas-personalizado {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.tarjeta-personalizada {
+  background-color: #ec3b58;
+  padding: 10px;
+  border-radius: 10px;
+}
+
+.titulo-tarjeta-personalizada {
+  color: rgb(255, 255, 255);
+  font-family: 'Teko', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 4px;
+  margin-top: 4px;
+}
+
+.parrafo-tarjeta-personalizada {
+  text-align: left;
+  color: #F4F4F4;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  line-height: 1.6;
+  margin: 0;
+  margin-bottom: 0;
+}
+
+@media(max-width:361px){
+  .boton-personalizado {
+    padding: 10px 10px;
+  }
+}

@@ -1,0 +1,142 @@
+/* Estilos generales */
+.diseno-fondo {
+  background: #212429;
+}
+.spinner-container{
+  background: #212429;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.contenido-principal {
+  color: white;
+}
+
+.contenedor-sin-margen {
+  margin-bottom: 0px;
+  padding-bottom: 0px;
+  border: 0px;
+}
+
+/* Sección de logo */
+.demo-logo-vertical {
+  height: 32px;
+  margin: 16px;
+  background: rgba(255, 255, 255, 0.2);
+}
+
+/* Sección de comentarios, video y marcas */
+.comments-section, .video-section, .brands-section {
+  padding: 8px 16px;
+}
+
+.comment, .brand {
+  margin-bottom: 10px;
+}
+
+.comment:last-child, .brand:last-child {
+  margin-bottom: 0;
+}
+
+.brand {
+  display: flex;
+  align-items: center;
+}
+
+/* Sección de contenido */
+.content-container {
+  justify-content: center;
+}
+
+/* Sección "Quiénes somos" */
+.about-us-container {
+  padding: 20px;
+  background-color: #f0f2f500;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.about-title {
+  margin-bottom: 16px;
+}
+
+.about-description {
+  font-size: 16px;
+  max-width: 800px;
+  margin-bottom: 32px;
+}
+
+.about-cards-container {
+  width: 100%;
+  max-width: 800px;
+}
+
+.about-card {
+  background-color: #ee5555;
+  color: #fff;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+  border-radius: 8px;
+  text-align: left;
+}
+
+.about-card .ant-card-head-title {
+  color: #fff;
+}
+
+/* Sección de pestañas personalizadas */
+.pestanas-personalizadas {
+  background-color: #1f1f1f;
+  padding-top: 20px; 
+  padding-right: 5%;
+  padding-left: 5%;
+}
+
+.pestanas-personalizadas .ant-tabs-nav {
+  margin-bottom: 0 !important;
+}
+
+.pestanas-personalizadas .ant-tabs-nav::before {
+  border-bottom: none !important;
+}
+
+.pestanas-personalizadas .ant-tabs-tab {
+  background-color: transparent !important;
+  border: 1px solid #555555 !important; 
+  border-radius: 10px !important;
+  margin: 10px !important;
+  padding: 5px 20px !important;
+  transition: all 0.3s ease !important;
+}
+
+.pestanas-personalizadas .ant-tabs-tab-btn {
+  color: #999999 !important; 
+  font-weight: 400 !important;
+  font-size: 14px !important;
+}
+
+.pestanas-personalizadas .ant-tabs-tab:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+  border-color: #777777 !important;
+}
+
+.pestanas-personalizadas .ant-tabs-tab.ant-tabs-tab-active {
+  background-color: rgba(255, 255, 255, 0.15) !important; 
+  border-color: #999999 !important;
+}
+
+.pestanas-personalizadas .ant-tabs-tab.ant-tabs-tab-active .ant-tabs-tab-btn {
+  color: #ffffff !important;
+}
+
+.pestanas-personalizadas .ant-tabs-ink-bar {
+  background-color: transparent !important;
+}
+
+.pestanas-personalizadas .ant-tabs-content-holder {
+  background-color: transparent !important;
+  padding: 20px 0 !important;
+}
